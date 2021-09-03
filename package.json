@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-docs-samples-functions-composer-storage-trigger",
+  "version": "0.0.1",
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "bunyan": "^1.8.12",
+    "form-data": "^3.0.0",
+    "google-auth-library": "^6.0.6",
+    "node-fetch": "^2.2.0",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Google Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^9.0.0"
+  },
+  "scripts": {
+    "test": "mocha test/*.test.js --timeout=20000",
+    "start": "node receive.js"
+  }
+}
